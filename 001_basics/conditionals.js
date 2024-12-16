@@ -16,4 +16,14 @@ const scoreval = 100.3
 const isLoggedIn = false
 const bignumber = 3456782345673456784567n
   
+// stack(primitive),heap(non primitive) 
 
+let userone = {
+    email: "user@gmail.com",
+    upi: "user@ybl"
+
+}
+let usertwo = userone
+usertwo.email = "vedaant@google.com"
+console.log(userone.email);
+console.log(usertwo.email);

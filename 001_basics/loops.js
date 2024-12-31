@@ -44,3 +44,22 @@ for(const [key, value] of map){
     console.log(key,value);
     
 }
+// interation over object using for-in loop
+const myobject = {
+    js: 'javascript',
+    cpp:'c++',
+    rp: "ruby"
+}
+for(const key in myobject){
+    console.log(`${key} for ${myobject[key]}`);
+    
+}
+const prog = ["js","ruby","Python","java","cpp"]
+for(const key in prog){
+    console.log(prog[key]);
+    
+}
+for(const key in map){
+    console.log(key);
+    
+}// map not iterable

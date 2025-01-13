@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>chai aur code</h1>
+    <button id="stop">stop</button>
+</body>
+<script>
+    const changeme = setTimeout(function(){
+        console.log("vedaant");
+        
+    },2000) // executes function once after 2000 millisec
+    document.querySelector('#stop').addEventListener('click',function(){
+        clearTimeout(changeme) // sstops the interval to happen
+        console.log("stopped");
+        
+    })    
+</script>
+</html>

@@ -5,7 +5,9 @@ const promiseone = new  Promise(function(resolve,reject){
         resolve()// this connects rssolve to .then()
     },1000)
 }) // promise created
-
+// .then exceutes one promise ocnsumed. 
+// resolve() also retunr objects funct arrays etc to functions in .then()
+//.catch() linked to reject
 promiseone.then(function(){
     console.log("promise consumed");
     
